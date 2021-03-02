@@ -234,7 +234,6 @@ function love.update(dt)
     --
     -- player 1
     if ball.dx < 0 then
-        -- Move up.
         if player1.y > ball.y + 4 then
             player1.dy = -PADDLE_SPEED
         elseif player1.y + player1.height < ball.y then
