@@ -234,7 +234,7 @@ function love.update(dt)
     --
     -- player 1
     -- TODO: add ai
-    -- if ball.dx < 0 then
+    if ball.dx < 0 then
         -- Move up.
         if player1.y > ball.y + 4 then
             player1.dy = -PADDLE_SPEED
@@ -243,7 +243,7 @@ function love.update(dt)
         else
             player1.dy = 0
         end
-    -- end
+    end
     -- if love.keyboard.isDown('w') then
     --     player1.dy = -PADDLE_SPEED
     -- elseif love.keyboard.isDown('s') then
